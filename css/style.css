@@ -2,6 +2,7 @@
     --gray30:#212121;
     --gray20:#212429;
     --gray10:#616161;
+    --yellow:#FEC62E;
     font-size: 18px;
 }
 
@@ -63,5 +64,16 @@ h2{
 }
 h3{
     font-size: 1.5em;
+}
+pre{
+    background:var(--yellow);
+}
+.hero{
+    /* background: url('../images/pattern.png'); */
+    background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent), url('../images/pattern.png');
+    /* background-repeat:no-repeat;
+    background-position:right 50px bottom 10px;
+    background-size:cover; */
+    height: 350px;
 }
 
