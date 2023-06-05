@@ -35,7 +35,10 @@ html{
 }
 body{
     color: var(--gray30);
-    font-family: charter;
+    /* font-family: charter; */
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 a{
     color: var(--gray30);
