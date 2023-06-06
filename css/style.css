@@ -4,6 +4,7 @@
     --gray10:#616161;
     --yellow:#FEC62E;
     font-size: 18px;
+    /* direction: ltr; o rtl */
 }
 
 @font-face {
