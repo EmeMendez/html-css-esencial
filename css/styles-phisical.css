@@ -1,9 +1,10 @@
 :root{
+    --gray40:#424242;
     --gray30:#212121;
     --gray20:#212429;
     --gray10:#616161;
     --yellow:#FEC62E;
-    font-size: 18px;
+    font-size: 16px;
     /* direction: ltr; o rtl */
 }
 
@@ -85,6 +86,9 @@ h3{
 }
 pre{
     background:var(--yellow);
+    padding: 40px;
+    font-family: 'Roboto';
+    line-height: 24px;
 }
 .hero{
     /* background: url('../images/pattern.png'); */
@@ -103,9 +107,10 @@ pre{
 }
 .section-content h3{
     counter-increment: titleList;
+    padding-bottom: 4px;
 }
 .section-content h3::before{
-    content: counter(titleList);
+    content: counter(titleList,decimal) '. ';
 }
 .section-content h3::after{
     content: '';
@@ -122,7 +127,18 @@ pre{
     color:greenyellow;
 } */
 blockquote{
+    font-size: 24px;
     margin: 32px 0;
+    padding-left: 16px;
+}
+blockquote p:first-child{
+    color: var(--gray40);
+}
+blockquote span{
+    color: var(--gray10);
+}
+blockquote span::before{
+    content: '-';
 }
 
 .section-content + hr{
@@ -135,4 +151,12 @@ blockquote{
 }
 .section-content ol li {
     line-height: 24px;
+}
+
+.margenes{
+    background-color: green;
+}
+.margenes p{
+    background-color: blue;
+    margin: 30px;
 }
