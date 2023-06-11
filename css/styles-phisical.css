@@ -36,6 +36,17 @@ html{
     font-size: 16px;
     color:var(--gray30);
 }
+main{
+}
+.wrapper{
+    max-width: 902px;
+    margin: auto;  
+}
+.main-content{
+    padding: 20px;
+    background-color: white;
+
+}
 body{
     color: var(--gray30);
     /* font-family: charter; */
@@ -148,7 +159,6 @@ blockquote span::before{
 }
 
 .section-content ul li {
-    background-color: green;
     margin-bottom: 16px;
 }
 .section-content ol li {
