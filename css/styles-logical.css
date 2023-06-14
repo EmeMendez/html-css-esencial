@@ -44,6 +44,10 @@ body{
     font-style: normal;
     font-weight: 400;
     margin: 0;
+    /* margin-inline: 100%;
+    margin-block: 50px;
+    margin-block-start: 10px;
+    margin-block-end: 10px; */
 }
 p{
     color: var(--white20);
@@ -66,6 +70,15 @@ header a{
 h1,h2,h3{
     font-weight: normal;
 }
+hr{
+    margin-block: 40px;
+    border-color: rgba(97, 97, 97, 0.2);
+}
+h1{
+    font-size:60px;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+}
 header a:hover{
     color:var(--white30);
 }
@@ -78,9 +91,12 @@ nav details summary{
 
 h2{
     font-size: 2em;
+    margin-block: 40px;
 }
 h3{
     font-size: 1.5em;
+    font-weight: 600;
+    margin-block: 16px;
 }
 pre{
     background:var(--white10);
@@ -100,7 +116,7 @@ pre{
     counter-increment: titleList;
 }
 .section-content h3::before{
-    content: counter(titleList);
+    content: counter(titleList,decimal) '. ';
 }
 .section-content h3::after{
     content: '';
@@ -109,6 +125,19 @@ pre{
     background: red;
     background: var(--white30);
     display: inline-block;
+}
+.section-content img{
+    margin-block-start: 40px;
+    display: block;
+}
+blockquote{
+    margin-block-start: 80px;
+    margin-block-end:63px;
+    background-color: var(--white10);
+    border-radius: 8px;
+}
+.main hr{
+    display: none;
 }
 /* h3::selection{
     color:green--white10;
