@@ -100,6 +100,9 @@ h3{
 }
 pre{
     background:var(--white10);
+    padding: 40px;
+    overflow: auto;
+    border-radius: 8px;
 }
 .hero{
     /* background: url('../images/pattern.png'); */
@@ -118,23 +121,25 @@ pre{
 .section-content h3::before{
     content: counter(titleList,decimal) '. ';
 }
-.section-content h3::after{
-    content: '';
-    width:32px;
-    height:4px;
-    background: red;
-    background: var(--white30);
-    display: inline-block;
-}
+
 .section-content img{
     margin-block-start: 40px;
     display: block;
+    max-inline-size: 100%;
 }
 blockquote{
     margin-block-start: 80px;
     margin-block-end:63px;
     background-color: var(--white10);
     border-radius: 8px;
+    padding-inline-end: 24px;
+    padding-inline-start: 24px;
+    padding-block-end: 24px;
+    padding-block-start: 24px;
+    line-height: 32px;
+}
+blockquote p {
+    color: var(--white30);
 }
 .main hr{
     display: none;
@@ -142,3 +147,15 @@ blockquote{
 /* h3::selection{
     color:green--white10;
 } */
+.main{
+
+}
+.wrapper{
+    inline-size: 902px;
+    max-inline-size: 902px;
+    margin: auto;
+    /*width: 902px;*/
+}
+.main-content{
+    padding-inline: 16px;
+}
