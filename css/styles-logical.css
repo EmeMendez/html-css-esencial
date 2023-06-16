@@ -102,6 +102,20 @@ pre{
     background:var(--white10);
     padding: 40px;
     overflow: auto;
+    /* border-radius: 8px;
+    border: 10px solid yellow;
+    border-inline-start: 10px solid red;
+    border-block-start: 10px solid purple  ;
+    border-block-end: 10px solid blue  ;
+    border: 10px solid #5551FF;
+    box-shadow: -10px 10px 0 0 #abaaf6;
+    margin-block-end: 30px; */
+    /* border-start-start-radius: 50px solid var(--white10); */
+}
+pre{
+    background:var(--white10);
+    padding: 40px;
+    overflow: auto;
     border-radius: 8px;
 }
 .hero{
