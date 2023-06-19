@@ -50,17 +50,38 @@ body{
     margin-block-end: 10px; */
 }
 p{
+    font-size: 16px;
     color: var(--white20);
 }
 a{
     color: var(--white30);
 }
+.header{
+    position: sticky;
+    inset-block-start: -45px;
+}
+.header-content{
+    position: relative;
+    inset-block-start: 65px;
+}
 header{
     font-size: 14px;
     color: var(--white);
+    /* position  */
+    position:absolute;
+    /* top  */
+    /* inset-block-start: ; */
+    /* bottom  */
+    /* insert-block-end: ; */
+    /* left  */
+    inset-inline-start: -208px;
+    /* right */
+    /* inset-inline-end: ; */
+    inline-size: 188px;
 }
 header li {
     color: var(--white20);
+    margin-block-end: 16px;
 }
 /* si  quiero cambiar las anclas dentro del header */
 header a{
