@@ -3,6 +3,7 @@
     --white30:white;
     --white20:#A5A3A5;
     --white10:#3A3539;
+    --blue10: #157EFB;
     font-size: 18px;
     /* direction: ltr; o rtl */
 }
@@ -228,4 +229,35 @@ blockquote p {
 .mail-contant-container{
     margin-block-start: 51px;
     margin-block-end: 40px;
+}
+
+.subscribe-form-title{
+    font-size: 24px;
+    margin-block-end: 16px;
+}
+
+.form input{
+    inline-size: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--white30);
+    background-color: var(--dark);
+    border-radius: 8px;
+    padding-block:12px;
+    padding-inline: 16px;
+    color: var(--white30);
+    font-size: 16px;
+    margin-block-end: 24px;
+}
+
+.form input[type="submit"]{
+    background-color: var(--blue10);
+    color: var(--white30);
+    inline-size: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-block-end: 80px;
+}
+
+.form input::-webkit-input-placeholder{
+    color: var(--white30);
 }
