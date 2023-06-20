@@ -194,3 +194,38 @@ blockquote p {
 .main-content{
     padding-inline: 16px;
 }
+.slider{
+    /* border: 2px solid cadetblue; */
+}
+
+.slider-container{
+    /* block-size: 100px; */
+    display: block;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0; /* para que no muestra una linea negra al borde derecho del video */
+}
+.video{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+.slider-bullet-list{
+    margin-block-start: 10px;
+    text-align: center;
+}
+.slider-bullet{
+    display: inline-block;
+    block-size: 15px;
+    inline-size: 15px;
+    border-radius: 50%;
+    background: white;
+}
+.mail-contant-container{
+    margin-block-start: 51px;
+    margin-block-end: 40px;
+}
