@@ -4,7 +4,7 @@
     --white20:#A5A3A5;
     --white10:#3A3539;
     --blue10: #157EFB;
-    font-size: 18px;
+    font-size: 16px;
     /* direction: ltr; o rtl */
 }
 
@@ -38,7 +38,7 @@ html{
     font-weight: normal;
 }
 body{
-    background-color: var(--dark);
+    background: var(--dark);
     color: var(--white30);
     /* font-family: charter; */
     font-family: 'Nunito', sans-serif;
@@ -58,27 +58,29 @@ a{
     color: var(--white30);
 }
 .header{
-    position: sticky;
-    inset-block-start: -45px;
+    /* position: sticky;
+    inset-block-start: -45px; */
 }
 .header-content{
-    position: relative;
-    inset-block-start: 65px;
+    padding-inline: 20px;
+    /* position: relative;
+    inset-block-start: 65px; */
 }
 header{
+    margin-block-start:20px;
     font-size: 14px;
     color: var(--white);
     /* position  */
-    position:absolute;
+    /* position:absolute; */
     /* top  */
     /* inset-block-start: ; */
     /* bottom  */
     /* insert-block-end: ; */
     /* left  */
-    inset-inline-start: -208px;
+    /* inset-inline-start: -208px; */
     /* right */
     /* inset-inline-end: ; */
-    inline-size: 188px;
+    /* inline-size: 188px; */
 }
 header li {
     color: var(--white20);
@@ -97,8 +99,8 @@ hr{
     border-color: rgba(97, 97, 97, 0.2);
 }
 h1{
-    font-size:60px;
-    margin-block-start: 64px;
+    font-size:40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
 }
 header a:hover{
@@ -146,7 +148,7 @@ pre{
     /* background-repeat:no-repeat;
     background-position:right 50px bottom 10px;
     background-size:cover; */
-    height: 350px;
+    block-size: 50px;
 }
 .section-content{
     counter-reset:titleList;
@@ -162,6 +164,9 @@ pre{
     margin-block-start: 40px;
     display: block;
     max-inline-size: 100%;
+}
+.section-content li{
+    color: var(--white20);
 }
 blockquote{
     margin-block-start: 80px;
@@ -183,11 +188,10 @@ blockquote p {
 /* h3::selection{
     color:green--white10;
 } */
-.main{
 
-}
 .wrapper{
-    inline-size: 902px;
+    /* inline-size: 902px;
+    max-inline-size: 902px; */
     max-inline-size: 902px;
     margin: auto;
     /*width: 902px;*/
@@ -260,4 +264,29 @@ blockquote p {
 
 .form input::-webkit-input-placeholder{
     color: var(--white30);
+}
+
+@media screen and (min-width: 1366px){
+    .hero{
+        block-size: 350px;
+    }
+    .header{
+        position: sticky;
+        inset-block-start: -45px;
+    }
+    .header-content{
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0;
+    }
+    header{
+        position:absolute;
+        inset-block-start: 0;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+    h1{
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
 }
