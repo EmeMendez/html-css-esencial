@@ -57,10 +57,7 @@ p{
 a{
     color: var(--white30);
 }
-.header{
-    /* position: sticky;
-    inset-block-start: -45px; */
-}
+
 .header-content{
     padding-inline: 20px;
     /* position: relative;
@@ -199,9 +196,7 @@ blockquote p {
 .main-content{
     padding-inline: 16px;
 }
-.slider{
-    /* border: 2px solid cadetblue; */
-}
+
 
 .slider-container{
     /* block-size: 100px; */

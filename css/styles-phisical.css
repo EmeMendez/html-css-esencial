@@ -45,9 +45,7 @@ html{
 .header-content{
     position: relative;
 }
-main{
-    /* position: relative; */
-}
+
 .wrapper{
     max-width: 902px;
     margin: auto;  
@@ -146,8 +144,7 @@ pre{
 .section-content h3 span::before{
     content: counter(titleList,decimal) '. ';
 }
-.section-content h3 span{
-}
+
 .section-content h3 span::after{
     content: '';
     width:100%;
