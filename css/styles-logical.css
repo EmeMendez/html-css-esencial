@@ -266,6 +266,29 @@ blockquote p {
     color: var(--white30);
 }
 
+footer{
+    background-color: var(--white30);
+    color: var(--dark); 
+    block-size: 174px;
+}
+.footer-container{
+    text-align: center;
+    display: flow-root;
+    top: 50%;
+    left: 50%;
+}
+.footer-container h2{
+    margin-block-end:16px;
+}
+
+.footer-container a{ 
+    margin-inline-end: 16px;
+}
+.footer-container path{
+    fill: var(--dark);
+    inline-size: 24px;
+}
+
 @media screen and (min-width: 1366px){
     .hero{
         block-size: 350px;
